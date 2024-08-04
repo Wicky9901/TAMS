@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cancel and Settle Tour</title>
+    <link rel="stylesheet" href="stylestoursplit.css">
+</head>
+<body>
+    <div class="tour-container">
+        <div class="content">
+            <h2>Tour Manage</h2>
+            <div class="cancel-settle-table">
+                <div class="cancel-section">
+                    <h3>Cancel Tour</h3>
+                    <div class="row">
+                        <label>Tour No.</label>
+                        <input type="text" id="cancel-tour-no">
+                    </div>
+                    <div class="row">
+                        <button onclick="cancelTour()">Cancel</button>
+                    </div>
+                </div>
+                <div class="settle-section">
+                    <h3>Settle Cash</h3>
+                    <div class="row">
+                        <label>Tour No.</label>
+                        <input type="text" id="settle-tour-no">
+                    </div>
+                    <div class="row">
+                        <label>Settle Payment</label>
+                        <input type="number" id="settle-payment">
+                    </div>
+                    <div class="row">
+                        <button onclick="settleTour()">Settle</button>
+                    </div>
+                </div>
+                <div class="upcoming-section">
+                    <h3>Upcoming Tours</h3>
+                    <div class="upcoming-tours" id="upcoming-tours"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="scriptstoursplit.js"></script>
+</body>
+</html>

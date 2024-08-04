@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>addtours</title>
+    <link rel="stylesheet" href="stylestour.css">
+</head>
+<body>
+    <div class="tour-container">
+        <div class="content">
+            <h2>Add Tours</h2>
+            <div class="tour-table">
+                <div class="row">
+                    <label>Tour No</label>
+                    <input type="text" id="tour-no" readonly>
+                </div>
+                <div class="row">
+                    <label>Date</label>
+                    <input type="date" id="date">
+                </div>
+                <div class="row">
+                    <label>Time</label>
+                    <input type="time" id="time">
+                </div>
+                <div class="row">
+                    <label>Name</label>
+                    <input type="text" id="name">
+                </div>
+                <div class="row">
+                    <label>Persons count</label>
+                    <input type="number" id="person">
+                </div>
+				
+				
+				<div class="row">
+                    <label>Hotel</label>
+                    <input type="text" id="hotel">
+                </div>
+				
+				
+				
+                <div class="row">
+                    <label>Tour</label>
+                    <input type="text" id="tour">
+                </div>
+                <div class="row">
+                    <label>Total Price</label>
+                    <input type="number" id="total-price">
+                </div>
+                <div class="row">
+                    <label>How much pay today</label>
+                    <input type="number" id="pay-today">
+                </div>
+                <div class="row">
+                    <label>Need to pay</label>
+                    <input type="number" id="need-to-pay">
+                </div>
+				//
+				
+				
+                <div class="row">
+                    <button onclick="submitTour()">Submit</button>
+                    <button onclick="clearForm()">Clear Form</button>
+                    <button onclick="clearLastTour()">Clear last tour from the database</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="scriptstour.js"></script>
+</body>
+</html>

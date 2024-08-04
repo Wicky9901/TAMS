@@ -1,0 +1,159 @@
+/* General Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+/* Login Page Styles */
+.login-container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: relative;
+    background: url('ele.png') no-repeat center center;
+    background-size: cover;
+}
+
+.background-image {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+.login-form h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.login-form label {
+    margin: 10px 0 5px;
+}
+
+.login-form input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.button-container button {
+    padding: 10px;
+    width: 45%;
+    border: none;
+    border-radius: 5px;
+    background-color: #5cb85c;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.button-container button:hover {
+    background-color: #4cae4c;
+}
+
+.button-container button:nth-child(2) {
+    background-color: #d9534f;
+}
+
+.button-container button:nth-child(2):hover {
+    background-color: #c9302c;
+}
+
+/* Dashboard Page Styles */
+.dashboard-container {
+    display: flex;
+    height: 100%;
+}
+
+.sidebar {
+    background-color: #7b7b7b;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+}
+
+.sidebar button {
+    background-color: #ff66b2;
+    color: white;
+    border: none;
+    padding: 15px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    text-align: left;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.sidebar button:hover {
+    background-color: #e6559f;
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex: 1;
+    padding: 20px;
+    background: url('ele.png') no-repeat center center;
+    background-size: cover;
+}
+
+.content-left, .content-right {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 300px;
+}
+
+.content-left h2, .content-right h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.content-left label, .content-right label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.content-left input, .content-right input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.content-right button {
+    padding: 10px;
+    width: 45%;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff66b2;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 5px;
+}
+
+.content-right button:hover {
+    background-color: #e6559f;
+}

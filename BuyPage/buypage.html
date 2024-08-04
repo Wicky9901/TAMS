@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy</title>
+    <link rel="stylesheet" href="stylesbuy.css">
+</head>
+<body>
+    <div class="exchange-container">
+        <div class="content">
+            <h2>Buy</h2>
+            <div class="exchange-table">
+                <div class="row">
+                    <label>Money Type</label>
+                    <input type="text" id="money-type">
+                </div>
+                <div class="row">
+                    <label>Amount</label>
+                    <input type="number" id="amount">
+                </div>
+                <div class="row">
+                    <label>Rate</label>
+                    <input type="number" id="rate">
+                </div>
+                <div class="row">
+                    <button onclick="calculatePrice()">CALCULATE</button>
+                </div>
+                <div class="row">
+                    <label>Price is</label>
+                    <input type="number" id="price" readonly>
+                </div>
+                <div class="row">
+                    <button onclick="saveCalculation()">Save this Calculation to database</button>
+                </div>
+                <div class="row">
+                    <button onclick="clearForm()">Clear Form</button>
+                    <button onclick="clearLastEntry()">Clear Last Entry From Database</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="scriptsbuy.js"></script>
+</body>
+</html>

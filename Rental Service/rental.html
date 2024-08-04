@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rental Service</title>
+    <link rel="stylesheet" href="stylesrental.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Rental Service</h2>
+        <form id="rentalForm">
+            <!--<label for="vehicleType">Vehicle Type</label>
+            <select id="vehicleType" required>
+                <option value="Car">Car</option>
+                <option value="Scooter">Scooter</option>
+                <option value="MotorBike">MotorBike</option>
+                <option value="Bicycle">Bicycle</option>
+            </select>-->
+
+			<label for="vehicleType">Vehicle Type</label>
+            <input type="text" id="vehicleType" required>
+			
+            <label for="vehicleNo">Vehicle No</label>
+            <input type="text" id="vehicleNo" required>
+
+            <label for="passportNo">Passport No</label>
+            <input type="text" id="passportNo" required>
+
+            <label for="rentalPersonName">Rental Person Name</label>
+            <input type="text" id="rentalPersonName" required>
+
+            <label for="startDate">Start Date</label>
+            <input type="date" id="startDate" required>
+
+            <label for="daysNeeded">How Many Days Needed</label>
+            <input type="number" id="daysNeeded" required>
+
+            <label for="endDate">End Date</label>
+            <input type="date" id="endDate" readonly>
+
+            <label for="howMuchPayToday">How much pay today</label>
+            <input type="number" id="howMuchPayToday" required>
+
+            <label for="totalPrice">Total Price</label>
+            <input type="number" id="totalPrice" required>
+
+            <label for="needToPay">Need to pay</label>
+            <input type="number" id="needToPay" readonly>
+
+            <button type="button" onclick="saveData()">Save</button>
+        </form>
+
+        <h3>Settle Payment</h3>
+        <form id="settleForm">
+            <label for="settleVehicleNo">Vehicle No</label>
+            <input type="text" id="settleVehicleNo" required>
+
+            <label for="settlePayment">Settle Payment</label>
+            <input type="number" id="settlePayment" required>
+
+            <button type="button" onclick="settlePayment()">Settle</button>
+        </form>
+    </div>
+    <script src="scriptsrental.js"></script>
+</body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exchange</title>
+    <link rel="stylesheet" href="stylesexchange.css">
+</head>
+<body>
+    <div class="exchange-container">
+        <div class="content">
+            <h2>Exchange</h2>
+            <div class="exchange-table">
+                <div class="row">
+                    <label>Money Type</label>
+                    <label>Amount</label>
+                    <label>Buy Rate</label>
+                    <label>Sell Rate</label>
+                    <label>Profit</label>
+                </div>
+                <div class="row">
+                    <input type="text" class="money-type">
+                    <input type="number" class="amount" oninput="calculateProfit(this)">
+                    <input type="number" class="buy-rate" oninput="calculateProfit(this)">
+                    <input type="number" class="sell-rate" oninput="calculateProfit(this)">
+                    <input type="number" class="profit" readonly>
+                </div>
+                <div class="row">
+                    <input type="text" class="money-type">
+                    <input type="number" class="amount" oninput="calculateProfit(this)">
+                    <input type="number" class="buy-rate" oninput="calculateProfit(this)">
+                    <input type="number" class="sell-rate" oninput="calculateProfit(this)">
+                    <input type="number" class="profit" readonly>
+                </div>
+                <div class="row">
+                    <input type="text" class="money-type">
+                    <input type="number" class="amount" oninput="calculateProfit(this)">
+                    <input type="number" class="buy-rate" oninput="calculateProfit(this)">
+                    <input type="number" class="sell-rate" oninput="calculateProfit(this)">
+                    <input type="number" class="profit" readonly>
+                </div>
+                <div class="row">
+                    <input type="text" class="money-type">
+                    <input type="number" class="amount" oninput="calculateProfit(this)">
+                    <input type="number" class="buy-rate" oninput="calculateProfit(this)">
+                    <input type="number" class="sell-rate" oninput="calculateProfit(this)">
+                    <input type="number" class="profit" readonly>
+                </div>
+            </div>
+            <div class="total-profit">
+                <label>Total Profit</label>
+                <input type="number" id="total-profit" readonly>
+            </div>
+              <div class="buttons">
+                <button onclick="calculateTotalProfit()">Total</button>
+                <button onclick="saveData()">Save</button>
+                <button onclick="exportReport('today')">EXPORT TODAY REPORT</button>
+                <button onclick="exportReport('week')">EXPORT WEEK REPORT</button>
+                <button onclick="exportReport('month')">EXPORT MONTHLY REPORT</button>
+            </div>
+        </div>
+    </div>
+    <script src="scriptsexchange.js"></script>
+</body>
+</html>
+
+
+ <!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exchange</title>
+    <link rel="stylesheet" href="stylesexchange.css">
+</head>
+<body>
+    <div class="exchange-container">
+        <div class="content">
+            <h2>Exchange</h2>
+            <div class="exchange-table">
+                <div class="row">
+                    <label>Money Type</label>
+                    <label>Amount</label>
+                    <label>Buy Rate</label>
+                    <label>Sell Rate</label>
+                    <label>Profit</label>
+                </div>
+                <div class="row">
+                    <select class="money-type">
+                        <option value="Dollar">Dollar</option>
+                        <option value="Euro">Euro</option>
+                        <option value="Ruble">Ruble</option>
+                        <option value="SterlingPound">Sterling Pound</option>
+                        <option value="Other">Other</option>
+                    </select>
+                    <input type="number" class="amount" oninput="calculateProfit(this)">
+                    <input type="number" class="buy-rate" oninput="calculateProfit(this)">
+                    <input type="number" class="sell-rate" oninput="calculateProfit(this)">
+                    <input type="number" class="profit" readonly>
+                </div>
+                <div class="row">
+                    <select class="money-type">
+                        <option value="Dollar">Dollar</option>
+                        <option value="Euro">Euro</option>
+                        <option value="Ruble">Ruble</option>
+                        <option value="SterlingPound">Sterling Pound</option>
+                        <option value="Other">Other</option>
+                    </select>
+                    <input type="number" class="amount" oninput="calculateProfit(this)">
+                    <input type="number" class="buy-rate" oninput="calculateProfit(this)">
+                    <input type="number" class="sell-rate" oninput="calculateProfit(this)">
+                    <input type="number" class="profit" readonly>
+                </div>
+                <div class="row">
+                    <select class="money-type">
+                        <option value="Dollar">Dollar</option>
+                        <option value="Euro">Euro</option>
+                        <option value="Ruble">Ruble</option>
+                        <option value="SterlingPound">Sterling Pound</option>
+                        <option value="Other">Other</option>
+                    </select>
+                    <input type="number" class="amount" oninput="calculateProfit(this)">
+                    <input type="number" class="buy-rate" oninput="calculateProfit(this)">
+                    <input type="number" class="sell-rate" oninput="calculateProfit(this)">
+                    <input type="number" class="profit" readonly>
+                </div>
+                <div class="row">
+                    <select class="money-type">
+                        <option value="Dollar">Dollar</option>
+                        <option value="Euro">Euro</option>
+                        <option value="Ruble">Ruble</option>
+                        <option value="SterlingPound">Sterling Pound</option>
+                        <option value="Other">Other</option>
+                    </select>
+                    <input type="number" class="amount" oninput="calculateProfit(this)">
+                    <input type="number" class="buy-rate" oninput="calculateProfit(this)">
+                    <input type="number" class="sell-rate" oninput="calculateProfit(this)">
+                    <input type="number" class="profit" readonly>
+                </div>
+            </div>
+            <div class="total-profit">
+                <label>Total Profit</label>
+                <input type="number" id="total-profit" readonly>
+            </div>
+            <div class="buttons">
+                <button onclick="calculateTotalProfit()">Total</button>
+                <button onclick="saveData()">Save</button>
+                <button onclick="exportReport('today')">EXPORT TODAY REPORT</button>
+                <button onclick="exportReport('week')">EXPORT WEEK REPORT</button>
+                <button onclick="exportReport('month')">EXPORT MONTHLY REPORT</button>
+            </div>
+        </div>
+    </div>
+    <script src="scriptsexchange.js"></script>
+</body>
+</html>
+-->
